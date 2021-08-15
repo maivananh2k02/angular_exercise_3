@@ -1,0 +1,7 @@
+<h1>Change Font Size.</h1>
+<div>
+  <p>Drag the mouse : </p>
+  <input #inputMouseElement type="range" min="10" max="72" value="14" (change)="changeFontSize(inputMouseElement)">
+</div>
+<p [style.fontSize.px]="changeFontSize(inputMouseElement)">Hello ae >></p>
+
